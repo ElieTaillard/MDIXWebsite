@@ -120,7 +120,7 @@ body {
   z-index: 999;
 }
 
-.mdl-demo .mdl-layout__content section:not(:last-of-type) {
+.mdl-demo .mdl-layout__content section {
   position: relative;
   margin-bottom: 48px;
 }
@@ -212,10 +212,6 @@ body {
   margin-bottom: 24px;
 }
 
-.mdl-demo .mdl-layout__tab-panel:not(#overview) {
-  background-color: white;
-}
-
 .mdl-demo #features section {
   margin-bottom: 72px;
 }
@@ -282,4 +278,11 @@ body {
 
 .footer-container {
   margin: 0 auto;
+}
+
+img.article-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 250px;
 }
