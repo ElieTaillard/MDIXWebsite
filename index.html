@@ -49,18 +49,8 @@
     href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
   <link rel="stylesheet" href="styles.css">
-  <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
-  </style>
 </head>
 
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
@@ -72,12 +62,17 @@
       </div>
       <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
         <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
-        <a href="#quick-start" class="mdl-layout__tab">Getting Started</a>
-        <a href="https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit/wiki" class="mdl-layout__tab" target="_blank">Documentation</a>
-        <a href="https://opencollective.com/materialdesigninxaml" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent mdl-color-text--accent-contrast button-donation" id="add" target="_blank">
-          Support us
-          <span class="visuallyhidden">Add</span>
-        </a>
+        <a href="#quick-start" class="mdl-layout__tab">Get Started</a>
+        <a href="https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit/wiki" class="mdl-layout__tab"
+          target="_blank">Documentation</a>
+        <button href="https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit"
+          class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent"
+          id="btn-github" target="_blank">
+          <i class="fa-brands fa-github material-icons"></i>
+        </button>
+        <div class="mdl-tooltip" data-mdl-for="btn-github">
+          GitHub Repository
+        </div>
       </div>
     </header>
     <main class="mdl-layout__content">
@@ -101,20 +96,6 @@
                 MahApps and Dragablz.
               </p>
             </div>
-            <div class="mdl-cell--12-col card-alt-area ">
-              <div class="mdl-card__supporting-text no-left-padding">
-                <h2 class="mdl-card__title-text">Features</h2>
-                <ul>
-                  <li>Styles and variations for the majority of standard WPF controls</li>
-                  <li>Many more additional controls to support the Material Design aesthetic and flow</li>
-                  <li>Easy configuration of Material Design Colour palettes at both design and run time</li>
-                  <li>Transitions API for easy build GUI animations</li>
-                  <li>Works stand-alone, and also compatible with other popular WPF frameworks, MahApps and Dragablz
-                  </li>
-                  <li>MVVM framework agnostic</li>
-                </ul>
-              </div>
-            </div>
             <div class="mdl-card__actions mdl-card--border">
               <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent"
                 href="https://github.com/ButchersBoy/MaterialDesignInXamlToolkit"
@@ -135,28 +116,24 @@
           </div>
         </section>
         <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-          <header
-            class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-            <i class="material-icons">play_circle_filled</i>
-          </header>
-          <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+          <div class="mdl-cell mdl-cell--12-col mdl-card">
             <div class="mdl-card__supporting-text">
               <h4>Features</h4>
-              Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi
-              amet do dolor eu fugiat consectetur elit cillum esse.
+              <ul>
+                <li>Styles and variations for the majority of standard WPF controls</li>
+                <li>Many more additional controls to support the Material Design aesthetic and flow</li>
+                <li>Easy configuration of Material Design Colour palettes at both design and run time</li>
+                <li>Transitions API for easy build GUI animations</li>
+                <li>Works stand-alone, and also compatible with other popular WPF frameworks, MahApps and Dragablz
+                </li>
+                <li>MVVM framework agnostic</li>
+              </ul>
             </div>
             <div class="mdl-card__actions">
-              <a href="#" class="mdl-button">Read our features</a>
+              <a href="https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit/releases"
+                class="mdl-button">Download the demo app</a>
             </div>
           </div>
-          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
-            <i class="material-icons">more_vert</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
-            <li class="mdl-menu__item">Lorem</li>
-            <li class="mdl-menu__item" disabled>Ipsum</li>
-            <li class="mdl-menu__item">Dolor</li>
-          </ul>
         </section>
         <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
           <div class="mdl-card mdl-cell mdl-cell--12-col">
@@ -200,59 +177,34 @@
             <li class="mdl-menu__item">Dolor</li>
           </ul>
         </section>
-        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-          <div class="mdl-card mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__supporting-text">
-              <h4>Technology</h4>
-              Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi
-              amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris
-              eiusmod qui id Lorem esse commodo in. Exercitation aute dolore deserunt culpa consequat elit labore
-              incididunt elit anim.
-            </div>
-            <div class="mdl-card__actions">
-              <a href="#" class="mdl-button">Read our features</a>
-            </div>
-          </div>
-          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
-            <i class="material-icons">more_vert</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
-            <li class="mdl-menu__item">Lorem</li>
-            <li class="mdl-menu__item" disabled>Ipsum</li>
-            <li class="mdl-menu__item">Dolor</li>
-          </ul>
-        </section>
-        <section class="section--footer mdl-color--white mdl-grid">
-          <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-            <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
-          </div>
-          <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-            <h5>Lorem ipsum dolor sit amet</h5>
-            Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-          </div>
-          <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-            <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
-          </div>
-          <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-            <h5>Lorem ipsum dolor sit amet</h5>
-            Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-          </div>
-        </section>
       </div>
       <div class="mdl-layout__tab-panel" id="quick-start">
         <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
           <div class="mdl-cell mdl-cell--12-col mdl-card">
             <div class="mdl-card__title">
-              <h1 class="mdl-card__title-text">Super Quick Start</h1>
+              <h1 class="mdl-card__title-text">Get Started</h1>
             </div>
             <div class="mdl-card__media"><img class="article-image" src="images/getstarted.jpg">
             </div>
             <div class="mdl-card__supporting-text">
-              <zero-md src="https://raw.githubusercontent.com/wiki/MaterialDesignInXAML/MaterialDesignInXamlToolkit/Super-Quick-Start.md"></zero-md>
+              <p>
+                Getting started bringing Material Design to your WPF apps takes minutes, follow this guide and dive in,
+                and if you want, join our community. This is our "super quick start" guide. A more comprehensive getting
+                started guide can be found on our <a
+                  href="https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit/wiki">Wiki</a>, and we
+                highly recommend you download and run the demo application.
+              </p>
+              <div id="getstarted-md-div">
+                <h1 class="mdl-card__title-text mdl-color-text--black">Super Quick Start</h1>
+                <hr>
+                <zero-md
+                  src="https://raw.githubusercontent.com/wiki/MaterialDesignInXAML/MaterialDesignInXamlToolkit/Super-Quick-Start.md">
+                </zero-md>
+              </div>
             </div>
             <div class="mdl-card__actions mdl-card--border">
               <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent"
-                href="https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit/wiki/Getting-Started"
+                href="https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit/wiki"
                 data-upgraded=",MaterialButton,MaterialRipple">
                 Read the Full guide
                 <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
@@ -262,27 +214,29 @@
       </div>
       <footer class="mdl-mini-footer">
         <div class="footer-container">
-        <div class="mdl-logo">Material Design In XAML: <a href="https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit" target="_blank">GitHub</a></div>
-        <ul class="mdl-mini-footer__link-list">
-        <li><a href="https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit/blob/master/LICENSE">Licence</a></li>
-        </ul>
+          <div class="mdl-logo">Material Design In XAML: <a
+              href="https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit" target="_blank">GitHub</a>
+          </div>
+          <ul class="mdl-mini-footer__link-list">
+            <li><a
+                href="https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit/blob/master/LICENSE">Licence</a>
+            </li>
+          </ul>
         </div>
-        </footer>
+      </footer>
     </main>
   </div>
-  <a href="https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit" target="_blank"
-    id="view-source"
-    class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View
-    Source</a>
-  <script src="https://code.getmdl.io/1.3.0/material.min.js" defer></script>
+  <a href="https://opencollective.com/materialdesigninxaml" target="_blank" id="support-us"
+    class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">
+    <i class="fa-solid fa-heart"></i>
+    Support us
+  </a>
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <!-- Lightweight client-side loader that feature-detects and load polyfills only when necessary -->
-<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
 
-<!-- Load the element definition -->
-<script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
-
-<!-- Simply set the `src` attribute to your MD file and win -->
-
+  <!-- Markdown viewer library -->
+  <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
 </body>
 
 </html>

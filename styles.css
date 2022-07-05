@@ -113,7 +113,7 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-.mdl-demo #add {
+.mdl-demo #btn-github {
   position: absolute;
   right: 40px;
   top: 36px;
@@ -285,4 +285,18 @@ img.article-image {
   height: auto;
   object-fit: cover;
   max-height: 250px;
+}
+
+#support-us {
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 0;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  z-index: 900;
+}
+
+#getstarted-md-div{
+  margin-top: 50px;
 }
